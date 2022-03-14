@@ -1,0 +1,76 @@
+.bg-dark{
+    background-color: #252525 !important;
+}
+
+.logo{
+    float: left;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.navbar-dark .navbar-nav .nav-item{
+    margin: 0px 5px 10px;
+}
+
+.top{
+    background-color: #252525;
+    color: whitesmoke;
+    text-align: center;
+    padding: 220px 100px 250px 100px;
+}
+
+.btn{
+    background-color: #252525;
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 10px 80px 10px 80px;
+    font-size: 30px;   
+}
+.btn:hover{
+    transition: 0.9s;
+    background-color: whitesmoke;
+    color:#252525;
+}
+.interest{
+    text-align: center;
+    padding: 180px 0px 130px;
+    background-color: whitesmoke;
+}
+
+.interest h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.interest p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.about{
+    text-align: center;
+    background-color: #252525;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 180px 0px 130px;
+}
+.foot p{
+    color:whitesmoke;
+    
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.social{
+    padding: 100px 50px 50px 50px;
+}
+
+.page-footer .col-sm{
+    text-align: left;
+}
+

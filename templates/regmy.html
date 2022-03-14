@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>CodeX</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='Images/logown.png') }}" />      <!-- title logo -->
+
+        <!-- for bootstrap-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+
+
+    </head>
+    <body>
+            <selection class="Form my-4 mx-5">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col-lg-5">
+                            <img src="{{ url_for('static', filename='Images/logown.png') }}" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-5">
+                            <form action="" method="POST">
+                                <div class="form-row">
+                                    <div class="col-lg-7">
+                                        <input type="email" placeholder="email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-lg-7">
+                                        <input type="password" placeholder="password" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-lg-7">
+                                        <button type="button" class="btn1">Login</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </selection>
+    
+    </body>
+</html>

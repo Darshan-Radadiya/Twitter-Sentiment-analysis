@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>CodeX</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='Images/logown.png') }}" />      <!-- title logo -->
+
+        <!-- for bootstrap-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/ok.css') }}">
+
+    </head>
+    <body>
+
+
+        
+        <!-- navigation bar -->
+        <div class="nb">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='Images/logo.png') }}" height="70px" width="70px"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="col-auto">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#top">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#Interest">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ab">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ link }}">{{label}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </nav>
+        </div>
+        
+
+
+
+          <div class="top" id="top">
+              <div class="container">
+                  <h1 class="display-3">Welcome {{ user }}</h1><br><br>
+                    <form action="/pred" method="POST">
+                        <input type="text" name="tweet" placeholder="enter tweet"><br><br><br><br>
+                        <input type="text" name="num" placeholder="enter number of tweets: "><br><br><br><br>
+                        <a href="/pred"><button type="submit" value="PRED" class="btn btn-secondary button-outline-info">analyze</button></a>
+                    </form>
+              </div>
+          </div>
+
+
+
+
+          <!-- Interest -->
+          <div class="Interest" id="Interest">
+              <div class="container">
+                    <h1>Services</h1><br><br>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="{{ url_for('static', filename='Images/www.png') }}" height="200px" width="200px"><br><br>
+                            <p>Web Development</p>
+                        </div>
+
+                        <div class="col-4">
+                            <img src="{{ url_for('static', filename='Images/data-sci.png') }}" height="200px" width="200px"><br><br>
+                            <p>Data-Science</p>
+                        </div>
+
+                        <div class="col-4">
+                            <img src="{{ url_for('static', filename='Images/ml.png') }}" height="200px" width="200px"><br><br>
+                            <p>Machine Learning</p>
+                        </div>
+                    </div>
+                    
+
+              </div>
+                
+          </div>
+
+          <!-- About -->
+          <div class="about" id="ab">
+              <div class="container">
+                <h1>About</h1><br><br>
+                <p> I am Aakash Prajapati. Currently, I am doing B.Tech. in Computer Engineering.</p>
+                <p>I want to obtain a position that will utilize my skills in Data Science, Machine Learning and Artificial Intelligence.</p>
+                <p>For more information you can see my resume:</p><br>
+                <a target="_blank"><button class="btn btn-secondary button-outline-info" onclick=" window.open('Resume_Aakash Prajapati_B.Tech.(Computer Engineering).pdf'); return true;">Resume</button></a>
+                
+              </div>
+          </div>
+
+          <!-- Social -->
+          <div class="interest" id="social">
+            <div class="container">
+                  <div class="row">
+                      <div class="col-4">
+                        <a href="https://www.instagram.com/_aakashprajapati/?hl=en" target="_blank"><img src="{{ url_for('static', filename='Images/instagram.png') }}" height="200px" width="200px"></a><br><br>
+                          
+                      </div>
+
+                      <div class="col-4">
+                        <a href="https://www.facebook.com/aakash447/" target="_blank"><img src="{{ url_for('static', filename='Images/facebook.png') }}" height="200px" width="200px"></a><br><br>
+                          
+                      </div>
+
+                      <div class="col-4">
+                        <a href="https://www.linkedin.com/in/aakash-prajapati-799a99152/" target="_blank"><img src="{{ url_for('static', filename='Images/linkedin.png') }}" height="200px" width="200px"></a><br><br>
+                          
+                      </div>
+                  </div>
+                  
+
+            </div>
+              
+        </div>
+
+          <!-- Footer -->
+          <div class="foot" id="ft">          
+                <footer class="page-footer bg-dark">
+                    <div class="bg-sucess">
+                        <div class="container">
+                            <div class="row py-3 d-flex align-items-center">
+                                <div class="col-sm">
+                                    <img src="{{ url_for('static', filename='Images/logo.png') }}" height="100px" width="100px">
+                                </div>
+                                <div class="col-sm">
+                                    <p>Address: </p>
+                                    <p>Pal,</p>
+                                    <p>Surat.</p>
+                                </div>
+                                
+                                <div class="col-sm">
+                                        <p><img src="{{ url_for('static', filename='Images/email.png') }}" height="20px" width="20px">      CodeX@gmail.com</p><br>
+                                        <p><img src="{{ url_for('static', filename='Images/phone.png') }}" height="20px" width="20px">      9924053524</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+          </div>
+    
+    </body>
+</html>
